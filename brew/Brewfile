@@ -1,0 +1,30 @@
+# Taps
+tap 'homebrew/cask-fonts'
+
+# Binaries
+brew 'git'
+brew 'pyenv'
+brew 'pipenv'
+brew 'k9s'
+brew 'midnight-commander'
+
+# Apps
+cask 'discord'
+cask 'docker'
+cask 'firefox'
+cask 'google-chrome'
+cask 'iterm2'
+cask 'telegram-desktop'
+cask 'keepassxc'
+cask 'thunderbird'
+cask 'obsidian'
+cask 'pycharm'
+cask 'postman'
+cask 'cyberduck'
+cask 'dbeaver-community'
+cask 'sublime-text'
+cask 'drawio'
+cask 'yandex-disk'
+cask 'tunnelblick'
+cask 'stats'
+cask 'via'
