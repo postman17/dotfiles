@@ -23,5 +23,6 @@
 ```
 клонируем в папку ~/
 git clone https://github.com/postman17/.zsh_history_project.git
+и устанавливаем gpg ключи
 ```
 
