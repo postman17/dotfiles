@@ -14,7 +14,7 @@ git clone git@github.com:postman17/dotfiles.git ~/projects/dotfiles
 ```
 cd zsh
 cp .env.example .env
-и добавить в .env файл данныеы
+и добавить в .env файл данные
 ```
 ### Настройка p10k
 ```
