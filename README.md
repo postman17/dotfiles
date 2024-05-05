@@ -6,12 +6,13 @@
 
 ## First
 ```
-git clone git@github.com:postman17/dotfiles.git ~/projects
+git clone git@github.com:postman17/dotfiles.git ~/projects/dotfiles
 ```
 ## install brew 
 ## install zsh
 ### Переменные окружения для zsh
 ```
+cd zsh
 cp .env.example .env
 и добавить в .env файл данныеы
 ```
