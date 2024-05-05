@@ -4,8 +4,17 @@
 - https://github.com/webpro/dotfiles/blob/main/Makefile
 - https://github.com/holman/dotfiles/blob/master/README.md
 
+## First
+```
+git clone git@github.com:postman17/dotfiles.git ~/projects
+```
 ## install brew 
 ## install zsh
+### Переменные окружения для zsh
+```
+cp .env.example .env
+и добавить в .env файл данныеы
+```
 ### Настройка p10k
 ```
 дополнительная настройка через команду p10k configure

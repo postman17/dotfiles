@@ -17,7 +17,7 @@ export PATH=$PATH:$GOPATH/bin
 export KUBECONFIG="$HOME/kubernetes-cluster-2424_kubeconfig.yaml"
 export PATH=$PATH:$HOME/.config/lsp/python-language-server/bin
 
-export $(grep -v '^#' .jiraenv | xargs)
+export $(grep -v '^#' $(pwd)/projects/dotfiles/.env | xargs)
 # eval "$(jira --completion-script-zsh)"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
