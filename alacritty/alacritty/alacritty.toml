@@ -1,3 +1,6 @@
+[env]
+TERM = "xterm-256color"
+
 [bell]
 animation = "EaseOutExpo"
 duration = 0
@@ -121,6 +124,7 @@ save_to_clipboard = true
 [window]
 # decorations = "none"
 opacity = 0.8
+blur = true
 
 [window.dimensions]
 columns = 100
@@ -128,8 +132,8 @@ columns = 100
 lines = 30
 
 [window.padding]
-x = 2
-y = 2
+x = 4
+y = 4
 
 [scrolling]
 history = 10000
