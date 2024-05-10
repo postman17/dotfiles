@@ -17,3 +17,7 @@ git clone git@github.com:wulfgarpro/history-sync.git
 cp -r history-sync ~/.oh-my-zsh/plugins
 
 ln -s $(pwd)/zshrc ~/.zshrc
+
+brew install fzf
+brew install yazi ffmpegthumbnailer unar jq poppler fd ripgrep fzf zoxide
+brew tap homebrew/cask-fonts && brew install --cask font-symbols-only-nerd-font
