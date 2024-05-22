@@ -8,8 +8,18 @@
 ```
 git clone git@github.com:postman17/dotfiles.git ~/projects/dotfiles
 ```
-## install brew 
+## install brew
+### перед установкой brew 
+```
+sudo chown -R konstantin.morozov /usr/local/bin
+chmod u+w /usr/local/bin
+```
 ## install zsh
+### перед установкой zsh 
+```
+sudo chown -R konstantin.morozov /usr/local/bin
+chmod u+w /usr/local/bin
+```
 ### Переменные окружения для zsh
 ```
 cd zsh

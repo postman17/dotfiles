@@ -12,3 +12,7 @@ brew services
 # Install all our dependencies with bundle (See Brewfile)
 brew tap homebrew/bundle
 brew bundle --file ./Brewfile
+
+# quicklook
+brew install qlmarkdown quicklook-json qlimagesize suspicious-package apparency quicklookase qlvideo webpquicklook
+
