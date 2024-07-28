@@ -4,7 +4,7 @@ vim.keymap.set('n', '<leader>e', '<Cmd>Neotree left toggle<CR>')
 vim.keymap.set('n', '<C-s>', ':w<CR>')
 vim.keymap.set('v', 'y', '"+y')
 vim.keymap.set('n', '<leader>l', '<cmd>LazyGit<cr>')
-vim.keymap.set('n', '<leader>g', '<cmd>ToggleBlame window<cr>')
+vim.keymap.set('n', '<leader>g', '<cmd>BlameToggle window<cr>')
 vim.keymap.set('n', '<leader>q', ':q<CR>')
 -- выделенный текст отступы через таб и шифт таб
 local opts = { noremap = true, silent = true }

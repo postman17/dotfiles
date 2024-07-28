@@ -18,6 +18,11 @@ export KUBECONFIG="$HOME/kubernetes-cluster-2424_kubeconfig.yaml"
 export PATH=$PATH:$HOME/.config/lsp/python-language-server/bin
 
 export $(grep -v '^#' ~/projects/dotfiles/zsh/.env | xargs)
+
+
+export PATH="/opt/homebrew/opt/postgresql@11/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
+
 # eval "$(jira --completion-script-zsh)"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -25,9 +30,19 @@ export $(grep -v '^#' ~/projects/dotfiles/zsh/.env | xargs)
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# for intel mac
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# for m mac
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+export LIBRARY_PATH=$LIBRARY_PATH:/opt/homebrew/Cellar/openssl@3/3.3.0/lib
+
+
 
 export EDITOR='nvim'
 
@@ -124,6 +139,7 @@ plugins=(
   zsh-autosuggestions
   fzf-zsh-plugin
   history-sync
+  kubectl
 )
 
 source $ZSH/oh-my-zsh.sh
