@@ -7,6 +7,8 @@ brew 'pyenv'
 brew 'pipenv'
 brew 'k9s'
 brew 'midnight-commander'
+brew 'nmap'
+brew 'orbstack'
 
 # Apps
 cask 'discord'
