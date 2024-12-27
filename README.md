@@ -35,7 +35,7 @@ cp .env.example .env
 ### Настрока nvim
 ```
 в nvim через команду :Mason через поиск вима / найти нужный пакет и через кнопку i установить
-ставить pyright и linter flake8, форматтеры isort
+ставить pyright и linter flake8, форматтеры isort, и gopls
 ```
 ## install tmux
 
@@ -43,6 +43,6 @@ cp .env.example .env
 ```
 клонируем в папку ~/
 git clone https://github.com/postman17/.zsh_history_project.git
-и устанавливаем gpg ключи
+и устанавливаем gpg ключи, сами ключи в keepass
 ```
 
