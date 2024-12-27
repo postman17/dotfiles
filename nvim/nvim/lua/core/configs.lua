@@ -9,3 +9,8 @@ vim.opt.mousefocus = true
 vim.opt.number = true
 vim.opt.relativenumber = false
 vim.opt.colorcolumn = "79"
+
+-- spell check
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
+
