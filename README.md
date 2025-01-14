@@ -13,6 +13,9 @@ git clone git@github.com:postman17/dotfiles.git ~/projects/dotfiles
 ```
 sudo chown -R konstantin.morozov /usr/local/bin
 chmod u+w /usr/local/bin
+
+Ключи для приложений
+little snitch - в keepass
 ```
 ## install zsh
 ### перед установкой zsh 
