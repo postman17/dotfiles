@@ -16,6 +16,9 @@ chmod u+w /usr/local/bin
 
 Ключи для приложений
 little snitch - в keepass
+adguard - в keepass
+Дополнительно поставить без brew
+https://www.perplexity.ai/ - в keepass
 ```
 ## install zsh
 ### перед установкой zsh 
