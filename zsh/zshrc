@@ -176,7 +176,7 @@ alias runserver="./manage.py runsslserver 0.0.0.0:8080 --certificate env/certifi
 alias runcelery="celery worker -A pdd.settings.celery:app -c 2 -l INFO"
 alias dockerup="docker-compose -f contrib/docker/biz_dev/docker-compose.yml up -d"
 alias flake="flake8 --config setup.cfg ."
-alias isort="python env/isort_imports.py ."
+alias isort_custom="python env/isort_imports.py ."
 alias killdocker="ps ax|grep -i docker|egrep -iv 'grep|com.docker.vmnetd'|awk '{print $1}'|xargs kill"
 
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
