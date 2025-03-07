@@ -13,7 +13,12 @@ vim.opt.rtp:prepend(lazypath)
 
 
 require("lazy").setup({
-	{
+  {
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {},
+},	{
 	  "nvim-neo-tree/neo-tree.nvim",
 	    branch = "v3.x",
 	    dependencies = { 
@@ -91,5 +96,13 @@ require("lazy").setup({
   "olimorris/persisted.nvim",
   lazy = false, -- make sure the plugin is always loaded at startup
   config = true
-}
+},
+{
+  "olimorris/codecompanion.nvim",
+  config = true,
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    "nvim-treesitter/nvim-treesitter",
+  },
+},
 })

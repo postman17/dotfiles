@@ -26,4 +26,6 @@ require("plugins.bookmarks")
 require("plugins.scrollbar")
 require("plugins.hlslens")
 require("plugins.persisted")
+require("plugins.tokyonight")
+require("plugins.codecompanion")
 

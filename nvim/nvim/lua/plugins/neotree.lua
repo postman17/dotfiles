@@ -35,8 +35,8 @@ require("neo-tree").setup({
    filesystem = {
     window = {
       mappings = {
-        ["tf"] = "telescope_find",
-        ["tg"] = "telescope_grep",
+        ["Tf"] = "telescope_find",
+        ["Tg"] = "telescope_grep",
 	['b'] = function() vim.api.nvim_exec('Neotree focus buffers left', true) end,
       },
     },
