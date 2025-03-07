@@ -13,6 +13,9 @@ vim.keymap.set('n', 'gr', builtin.lsp_references,
 vim.keymap.set('n', 'gd', builtin.lsp_definitions,
                {noremap = true, silent = true})
 
+
+local open_with_trouble = require("trouble.sources.telescope").open
+
 local actions = require "telescope.actions"
 require("telescope").setup {
 	defaults = {
@@ -24,11 +27,15 @@ require("telescope").setup {
             ["<C-k>"] = actions.move_selection_previous,
             ["<C-S-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
             ["<ScrollWheelUp>"] = actions.preview_scrolling_up,
-	["<ScrollWheelDown>"] = actions.preview_scrolling_down,
-				["<C-f>"] = actions.results_scrolling_up,
-			["<C-b>"] = actions.results_scrolling_down,
+	    ["<ScrollWheelDown>"] = actions.preview_scrolling_down,
+	    ["<C-f>"] = actions.results_scrolling_up,
+	    ["<C-b>"] = actions.results_scrolling_down,
+	    ["<c-t>"] = open_with_trouble
           },
-          n = { q = actions.close },
+          n = { 
+	    q = actions.close,
+	    ["<c-t>"] = open_with_trouble,
+    	  },
         },
    }
 }
