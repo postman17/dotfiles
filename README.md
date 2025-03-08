@@ -36,7 +36,6 @@ cp .env.example .env
 ```
 дополнительная настройка через команду p10k configure
 ```
-## install alacritty
 ## install nvim
 ### Настрока nvim
 ```
