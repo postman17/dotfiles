@@ -19,8 +19,10 @@ export PATH=$PATH:$HOME/.config/lsp/python-language-server/bin
 
 export $(grep -v '^#' ~/projects/dotfiles/zsh/.env | xargs)
 
+export C_INCLUDE_PATH=/opt/homebrew/Cellar/librdkafka/2.10.0/include
+export LIBRARY_PATH=/opt/homebrew/Cellar/librdkafka/2.10.0/lib
 
-export PATH="/opt/homebrew/opt/postgresql@11/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 export PATH="/opt/homebrew/opt/mysql@5.7/bin:$PATH"
 
 # eval "$(jira --completion-script-zsh)"
@@ -195,3 +197,5 @@ eval "$(zoxide init zsh)"
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/konstantin.morozov/.lmstudio/bin"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
