@@ -199,3 +199,9 @@ eval "$(zoxide init zsh)"
 export PATH="$PATH:/Users/konstantin.morozov/.lmstudio/bin"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[[ -s "/Users/konstantin.morozov/.gvm/scripts/gvm" ]] && source "/Users/konstantin.morozov/.gvm/scripts/gvm"
+alias stop-adloader="pkill -f adloader"
+export PATH=$PATH:$(go env GOPATH)/bin
+export PATH="/opt/homebrew/opt/protobuf@29/bin:$PATH"
+export PATH="/opt/homebrew/opt/protobuf@29/bin:$PATH"
